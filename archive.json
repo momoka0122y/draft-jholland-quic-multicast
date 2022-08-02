@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-07-31T00:31:56.555548+00:00",
+  "timestamp": "2022-08-02T00:35:39.558307+00:00",
   "repo": "GrumpyOldTroll/draft-jholland-quic-multicast",
   "labels": [
     {
@@ -1890,9 +1890,48 @@
       "labels": [],
       "body": "![mc_hammer](https://user-images.githubusercontent.com/3170247/181605142-25a994a3-d256-4f49-b36d-ad7a3d30b1cd.png)\r\n",
       "createdAt": "2022-07-28T17:55:40Z",
-      "updatedAt": "2022-07-28T17:55:40Z",
+      "updatedAt": "2022-07-31T14:35:10Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "MaxF12",
+          "authorAssociation": "COLLABORATOR",
+          "body": "What are the odds that renaming the MC_RETIRE frame to MC_HAMMER will make it through the RFC editor? ",
+          "createdAt": "2022-07-31T14:20:17Z",
+          "updatedAt": "2022-07-31T14:20:17Z"
+        },
+        {
+          "author": "squarooticus",
+          "authorAssociation": "COLLABORATOR",
+          "body": "The low bar was set by \"6bone\", so I feel we could probably get away with a lot here.",
+          "createdAt": "2022-07-31T14:35:10Z",
+          "updatedAt": "2022-07-31T14:35:10Z"
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "id": "I_kwDOG6NyZs5O4qBJ",
+      "title": "Move channel id to first field in join frame",
+      "url": "https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast/issues/104",
+      "state": "OPEN",
+      "author": "MaxF12",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "All frames except the join frame start with the channel id length and then the channel id, except the Join frame where it is at the end. ",
+      "createdAt": "2022-07-31T14:19:04Z",
+      "updatedAt": "2022-07-31T14:43:28Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "MaxF12",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Same for MC_STATE actually",
+          "createdAt": "2022-07-31T14:43:28Z",
+          "updatedAt": "2022-07-31T14:43:28Z"
+        }
+      ]
     }
   ],
   "pulls": [

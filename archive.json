@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-08-02T00:35:39.558307+00:00",
+  "timestamp": "2022-08-04T00:36:36.899007+00:00",
   "repo": "GrumpyOldTroll/draft-jholland-quic-multicast",
   "labels": [
     {
@@ -47,6 +47,11 @@
       "name": "wontfix",
       "description": "This will not be worked on",
       "color": "ffffff"
+    },
+    {
+      "name": "humor",
+      "description": "live, laugh, love",
+      "color": "88C19D"
     }
   ],
   "issues": [
@@ -1887,10 +1892,12 @@
       "author": "squarooticus",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
-      "labels": [],
+      "labels": [
+        "humor"
+      ],
       "body": "![mc_hammer](https://user-images.githubusercontent.com/3170247/181605142-25a994a3-d256-4f49-b36d-ad7a3d30b1cd.png)\r\n",
       "createdAt": "2022-07-28T17:55:40Z",
-      "updatedAt": "2022-07-31T14:35:10Z",
+      "updatedAt": "2022-08-02T00:42:31Z",
       "closedAt": null,
       "comments": [
         {
@@ -1932,6 +1939,22 @@
           "updatedAt": "2022-07-31T14:43:28Z"
         }
       ]
+    },
+    {
+      "number": 105,
+      "id": "I_kwDOG6NyZs5PIiLY",
+      "title": "Receive different keys with same sequence number on different paths",
+      "url": "https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast/issues/105",
+      "state": "OPEN",
+      "author": "MaxF12",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-08-03T18:36:41Z",
+      "updatedAt": "2022-08-03T18:36:41Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [

@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-08-04T00:36:36.899007+00:00",
+  "timestamp": "2022-08-07T00:37:04.199088+00:00",
   "repo": "GrumpyOldTroll/draft-jholland-quic-multicast",
   "labels": [
     {
@@ -1924,11 +1924,13 @@
       "state": "OPEN",
       "author": "MaxF12",
       "authorAssociation": "COLLABORATOR",
-      "assignees": [],
+      "assignees": [
+        "MaxF12"
+      ],
       "labels": [],
       "body": "All frames except the join frame start with the channel id length and then the channel id, except the Join frame where it is at the end. ",
       "createdAt": "2022-07-31T14:19:04Z",
-      "updatedAt": "2022-07-31T14:43:28Z",
+      "updatedAt": "2022-08-05T15:34:33Z",
       "closedAt": null,
       "comments": [
         {
@@ -1948,13 +1950,55 @@
       "state": "OPEN",
       "author": "MaxF12",
       "authorAssociation": "COLLABORATOR",
-      "assignees": [],
+      "assignees": [
+        "MaxF12"
+      ],
       "labels": [],
       "body": "",
       "createdAt": "2022-08-03T18:36:41Z",
-      "updatedAt": "2022-08-03T18:36:41Z",
+      "updatedAt": "2022-08-05T15:34:42Z",
       "closedAt": null,
       "comments": []
+    },
+    {
+      "number": 106,
+      "id": "I_kwDOG6NyZs5PR49E",
+      "title": "Change transport parameters to use a list of capabilities instead of just sharing the limits bit field",
+      "url": "https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast/issues/106",
+      "state": "OPEN",
+      "author": "GrumpyOldTroll",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Also: GREASE the list of capabilities (both sides should indicate the capabilities to ever handle ipv4 and v6, where the limits bit field just indicates what the client will accept right now).",
+      "createdAt": "2022-08-05T15:37:02Z",
+      "updatedAt": "2022-08-05T15:37:02Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 107,
+      "id": "I_kwDOG6NyZs5PR5dA",
+      "title": "Add hostname to the secret before generating the key",
+      "url": "https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast/issues/107",
+      "state": "OPEN",
+      "author": "GrumpyOldTroll",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "This binds the encryption/decryption of the channel to the tls session hostname used to open the tls session in the unicast connection.",
+      "createdAt": "2022-08-05T15:39:11Z",
+      "updatedAt": "2022-08-05T15:43:53Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "GrumpyOldTroll",
+          "authorAssociation": "OWNER",
+          "body": "Also: add a transport parameters feature to indicate that this is the way to do the decryption, so that we can change to other alternatives in the future if necessary, so you can bind it to a different thing besides the tls hostname in the future?  (Is there a chance we might need that?)",
+          "createdAt": "2022-08-05T15:43:53Z",
+          "updatedAt": "2022-08-05T15:43:53Z"
+        }
+      ]
     }
   ],
   "pulls": [

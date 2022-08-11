@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-08-07T00:37:04.199088+00:00",
+  "timestamp": "2022-08-11T00:34:13.910642+00:00",
   "repo": "GrumpyOldTroll/draft-jholland-quic-multicast",
   "labels": [
     {
@@ -4562,6 +4562,32 @@
           "updatedAt": "2022-07-09T12:56:55Z"
         }
       ],
+      "reviews": []
+    },
+    {
+      "number": 108,
+      "id": "PR_kwDOG6NyZs489tJl",
+      "title": "Issues 104 and 105",
+      "url": "https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast/pull/108",
+      "state": "OPEN",
+      "author": "MaxF12",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #104 and #105 ",
+      "createdAt": "2022-08-10T14:44:06Z",
+      "updatedAt": "2022-08-10T14:44:07Z",
+      "baseRepository": "GrumpyOldTroll/draft-jholland-quic-multicast",
+      "baseRefName": "main",
+      "baseRefOid": "fd10b7a8e750e98fd58cd486c6f562eae7ecddf9",
+      "headRepository": "MaxF12/draft-jholland-quic-multicast",
+      "headRefName": "issue_104",
+      "headRefOid": "b5576be19f9c1e8290e9c6988fe02fe6d0802e3f",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
       "reviews": []
     }
   ]

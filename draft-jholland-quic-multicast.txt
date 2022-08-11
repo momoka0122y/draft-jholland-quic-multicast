@@ -5,10 +5,10 @@
 QUIC Working Group                                            J. Holland
 Internet-Draft                                 Akamai Technologies, Inc.
 Intended status: Experimental                                  L. Pardue
-Expires: 12 January 2023                                                
+Expires: 12 February 2023                                               
                                                                M. Franke
                                                                TU Berlin
-                                                            11 July 2022
+                                                          11 August 2022
 
 
                       Multicast Extension for QUIC
@@ -33,7 +33,8 @@ About This Document
 
    Discussion of this document takes place on the QUIC Individual Draft
    mailing list (mailto:quic@ietf.org), which is archived at
-   https://mailarchive.ietf.org/arch/browse/quic/.
+   https://mailarchive.ietf.org/arch/browse/quic/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/quic/.
 
    Source for this draft and an issue tracker can be found at
    https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast.
@@ -53,7 +54,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 12 January 2023.
+   This Internet-Draft will expire on 12 February 2023.
 
 Copyright Notice
 
@@ -852,6 +853,11 @@ Table of Contents
    starting at a particular packet number, but the client does not yet
    know about the key change.)
 
+   Should a client receive two different Keys with the same Key Sequence
+   Number and Channel ID, e.g. one over the unicast connection and one
+   over the multicast channel, it SHOULD close the connection with
+   reason MC_EXTENSION_ERROR.
+
    It is RECOMMENDED that servers send regular secret updates.
 
    MC_KEY frames are formatted as shown in Figure 5.
@@ -957,11 +963,11 @@ Table of Contents
 
    MC_JOIN Frame {
      Type (i) = TBD-02 (experiments use 0xff3e802),
+     ID Length (8),
+     Channel ID (8..160),
      MC_LIMITS Sequence Number (i),
      MC_STATE Sequence Number (i),
-     MC_KEY Sequence Number (i),
-     ID Length (8),
-     Channel ID (8..160)
+     MC_KEY Sequence Number (i)
    }
 
                        Figure 6: MC_JOIN Frame Format
@@ -1164,9 +1170,9 @@ Table of Contents
 
   MC_STATE Frame {
     Type (i) = TBD-0b..TBD-0c (experiments use 0xff3e80b and 0xff3e80c),
-    Client Channel State Sequence Number (i),
     ID Length (8),
     Channel ID (8..160),
+    Client Channel State Sequence Number (i),
     State (8),
     Reason Code (i),
     Reason Phrase Length (i),
@@ -1667,9 +1673,8 @@ Table of Contents
               Rose, K. and J. Holland, "Security and Privacy
               Considerations for Multicast Transports", Work in
               Progress, Internet-Draft, draft-krose-multicast-security-
-              02, 31 January 2022,
-              <https://datatracker.ietf.org/doc/html/draft-krose-
-              multicast-security-02>.
+              03, 11 July 2022, <https://datatracker.ietf.org/doc/html/
+              draft-krose-multicast-security-03>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,

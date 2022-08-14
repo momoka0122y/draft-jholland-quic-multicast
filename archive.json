@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-08-11T00:34:13.910642+00:00",
+  "timestamp": "2022-08-14T00:33:14.426984+00:00",
   "repo": "GrumpyOldTroll/draft-jholland-quic-multicast",
   "labels": [
     {
@@ -1921,7 +1921,7 @@
       "id": "I_kwDOG6NyZs5O4qBJ",
       "title": "Move channel id to first field in join frame",
       "url": "https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast/issues/104",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "MaxF12",
       "authorAssociation": "COLLABORATOR",
       "assignees": [
@@ -1930,8 +1930,8 @@
       "labels": [],
       "body": "All frames except the join frame start with the channel id length and then the channel id, except the Join frame where it is at the end. ",
       "createdAt": "2022-07-31T14:19:04Z",
-      "updatedAt": "2022-08-05T15:34:33Z",
-      "closedAt": null,
+      "updatedAt": "2022-08-11T04:52:31Z",
+      "closedAt": "2022-08-11T04:52:31Z",
       "comments": [
         {
           "author": "MaxF12",
@@ -4569,26 +4569,42 @@
       "id": "PR_kwDOG6NyZs489tJl",
       "title": "Issues 104 and 105",
       "url": "https://github.com/GrumpyOldTroll/draft-jholland-quic-multicast/pull/108",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "MaxF12",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Closes #104 and #105 ",
       "createdAt": "2022-08-10T14:44:06Z",
-      "updatedAt": "2022-08-10T14:44:07Z",
+      "updatedAt": "2022-08-11T04:52:30Z",
       "baseRepository": "GrumpyOldTroll/draft-jholland-quic-multicast",
       "baseRefName": "main",
       "baseRefOid": "fd10b7a8e750e98fd58cd486c6f562eae7ecddf9",
       "headRepository": "MaxF12/draft-jholland-quic-multicast",
       "headRefName": "issue_104",
       "headRefOid": "b5576be19f9c1e8290e9c6988fe02fe6d0802e3f",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2022-08-11T04:52:30Z",
+      "mergedAt": "2022-08-11T04:52:30Z",
+      "mergedBy": "GrumpyOldTroll",
+      "mergeCommit": {
+        "oid": "94dac300f23affdbbc245ad2ded1abcedec88940"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOG6NyZs4_uk23",
+          "commit": {
+            "abbreviatedOid": "b5576be"
+          },
+          "author": "GrumpyOldTroll",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "lgtm, thanks!",
+          "createdAt": "2022-08-11T04:52:22Z",
+          "updatedAt": "2022-08-11T04:52:22Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
